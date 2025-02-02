@@ -6,8 +6,63 @@
     <title>Empress Martha ❤️</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('flowers-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .slide {
+            display: none;
+            font-size: 1.5em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .gallery {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 1.2em;
+            border-radius: 10px;
+        }
+        .message-area {
+            margin-top: 20px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+
     <audio autoplay loop>
         <source src="romantic-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -28,12 +83,20 @@
         </div>
     </div>
 
-    
-        <h2>You're my lovely Empress </h>
-            <img src="photo1.jpg" alt="Memorable Moment 1">
-            <img src="photo2.jpg" alt="Memorable Moment 2">
-            <img src="photo3.jpg" alt="Memorable Moment 3">
-        </div>
+    <div class="gallery">
+        <h2>You're my lovely Empress</h2>
+        <img src="photo1.jpg" alt="Memorable Moment 1">
+        <img src="photo2.jpg" alt="Memorable Moment 2">
+        <img src="photo3.jpg" alt="Memorable Moment 3">
+    </div>
+
+    <div class="message-area">
+        <p>Send me a lovely message, my Empress ❤️</p>
+        <a class="whatsapp-btn" href="https://wa.me/YOUR_NUMBER" target="_blank">Message Me on WhatsApp</a>
+    </div>
+
+    <div class="footer">
+        Happy Valentine's Day to my lovely Empress ❤️ – From your dearest.
     </div>
 
     <script>
@@ -51,5 +114,6 @@
             setTimeout(showSlides, 3000);
         }
     </script>
+
 </body>
 </html>
