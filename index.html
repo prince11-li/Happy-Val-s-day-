@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empress Martha ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="romantic-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <h2>My Dearest Empress Martha ❤️</h2>
+            <p>You are the most beautiful soul I've ever known.</p>
+        </div>
+        <div class="slide fade">
+            <h2>Forever in My Heart 💖</h2>
+            <p>Every moment with you is a dream come true.</p>
+        </div>
+        <div class="slide fade">
+            <h2>My Love for You is Eternal 💕</h2>
+            <p>I cherish and adore you more than words can express.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h2>Our Beautiful Memories 📸</h2>
+        <div class="gallery-container">
+            <img src="photo1.jpg" alt="Memorable Moment 1">
+            <img src="photo2.jpg" alt="Memorable Moment 2">
+            <img src="photo3.jpg" alt="Memorable Moment 3">
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+</html>

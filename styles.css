@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('flowers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.slideshow-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
