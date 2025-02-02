@@ -1,16 +1,46 @@
+/* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('flowers.jpg') no-repeat center center fixed;
-    background-size: cover;
     text-align: center;
-    color: white;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
 }
 
-h2 {
-    font-size: 2rem;
+/* Background Slideshow */
+.background-slideshow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+.bg-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.active-bg {
+    opacity: 1;
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+/* Text Slideshow */
 .slideshow-container {
+    position: relative;
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -18,23 +48,49 @@ h2 {
 
 .slide {
     display: none;
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    border-radius: 10px;
+}
+
+/* Image Slideshow */
+.image-slideshow {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.image-slide {
+    display: none;
+    text-align: center;
+}
+
+.image-slide img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
     background: rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
     border-radius: 10px;
 }
 
-.gallery {
-    margin-top: 40px;
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.gallery-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+/* WhatsApp Button Styling */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
 }
