@@ -4,116 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empress Martha ❤️</title>
+    <!-- Linking to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Linking to external JS file -->
     <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('flowers-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
-            color: #fff;
-        }
-        .slideshow-container {
-            position: relative;
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-        }
-        .slide {
-            display: none;
-            font-size: 1.5em;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .gallery {
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        .footer {
-            margin-top: 30px;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.7);
-            font-size: 1.2em;
-            border-radius: 10px;
-        }
-        .message-area {
-            margin-top: 20px;
-        }
-        .whatsapp-btn {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
-    <audio autoplay loop>
-        <source src="romantic-music.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <!-- Background Slideshow -->
+    <div class="background-slideshow">
+        <div class="bg-slide" style="background-image: url('flowers1.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('flowers2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('flowers3.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('flowers4.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('flowers5.jpg');"></div>
+    </div>
 
-    <div class="slideshow-container">
-        <div class="slide fade">
-            <h2>My Dearest Empress Martha ❤️</h2>
-            <p>You are the most beautiful soul I've ever known.</p>
+    <div class="content">
+        <audio autoplay loop>
+            <source src="romantic-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Text Slideshow -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <h2>My Dearest Empress Martha ❤️</h2>
+                <p>You are the most beautiful soul I've ever known.</p>
+            </div>
+            <div class="slide fade">
+                <h2>Forever in My Heart 💖</h2>
+                <p>Every moment with you is a dream come true.</p>
+            </div>
+            <div class="slide fade">
+                <h2>My Love for You is Eternal 💕</h2>
+                <p>I cherish and adore you more than words can express.</p>
+            </div>
         </div>
-        <div class="slide fade">
-            <h2>Forever in My Heart 💖</h2>
-            <p>Every moment with you is a dream come true.</p>
+
+        <!-- Image Slideshow -->
+        <div class="image-slideshow">
+            <div class="image-slide">
+                <h2>You're my lovely Empress</h2>
+                <img src="photo1.jpg" alt="Memorable Moment 1">
+            </div>
+            <div class="image-slide">
+                <h2>You're my happiness</h2>
+                <img src="photo2.jpg" alt="Memorable Moment 2">
+            </div>
+            <div class="image-slide">
+                <h2>My heart beats for you</h2>
+                <img src="photo3.jpg" alt="Memorable Moment 3">
+            </div>
         </div>
-        <div class="slide fade">
-            <h2>My Love for You is Eternal 💕</h2>
-            <p>I cherish and adore you more than words can express.</p>
+
+        <div class="message-area">
+            <p>Send me a lovely message, my Empress ❤️</p>
+            <a class="whatsapp-btn" href="https://wa.me/YOUR_NUMBER" target="_blank">Message Me on WhatsApp</a>
+        </div>
+
+        <div class="footer">
+            Happy Valentine's Day to my lovely Empress ❤️ – From your dearest.
         </div>
     </div>
-
-    <div class="gallery">
-        <h2>You're my lovely Empress</h2>
-        <img src="photo1.jpg" alt="Memorable Moment 1">
-        <img src="photo2.jpg" alt="Memorable Moment 2">
-        <img src="photo3.jpg" alt="Memorable Moment 3">
-    </div>
-
-    <div class="message-area">
-        <p>Send me a lovely message, my Empress ❤️</p>
-        <a class="whatsapp-btn" href="https://wa.me/YOUR_NUMBER" target="_blank">Message Me on WhatsApp</a>
-    </div>
-
-    <div class="footer">
-        Happy Valentine's Day to my lovely Empress ❤️ – From your dearest.
-    </div>
-
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000);
-        }
-    </script>
 
 </body>
 </html>
